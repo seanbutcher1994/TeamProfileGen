@@ -76,11 +76,35 @@ const uniqueQIntern = [
         message: `What is the intern's school?`
     }
 ]
+
+const moreEmployees = [
+    {
+        type: 'confirm',
+        name: 'newEmployee',
+        message: 'Would you like to add another employee?',
+        default: 'true'
+    }
+]
+
+const newEmployeeType = [
+    {
+        name: 'role',
+        type: 'list',
+        message: 'What is this team members role?',
+        choices: [
+            'manager',
+            'engineer',
+            'intern'
+        ],
+        default: 'manager'
+    }
+]
 module.exports = {
     startPrompt,
     uniqueQManager,
     uniqueQEngineer,
-    uniqueQIntern
-
+    uniqueQIntern,
+    moreEmployees,
+    newEmployeeType,
 
 }
