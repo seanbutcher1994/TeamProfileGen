@@ -2,9 +2,10 @@ const questions = require('./utils/questions');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
+const renderTeam = require('./utils/renderTeam');
 
 const inquirer = require("inquirer");
-// const fs = require("fs");
+const fs = require("fs");
 //const chalk = require("chalk");
 
 let employees = [];
@@ -50,7 +51,12 @@ function addNewEmployee(){
         if (answer.newEmployee) {
             promptEmployeeType();
         } else {
+            console.log(company);
             console.log(employees);
+            let html = renderTeam(company, employees);
+            buildTeamFile(html)
+            return;
+
         }
 
     })
@@ -66,5 +72,9 @@ function promptEmployeeType(){
             internQuestions();
         }
     })
+}
+
+function buildTeamFile(data) {
+    fs.writeFile("./dist/team.html", data, (err) => err ? console.log(err) : console.log('Team Profile file successfully written'));
 }
 startPrompt();
