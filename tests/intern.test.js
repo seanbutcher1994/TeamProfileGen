@@ -1,6 +1,6 @@
 
 const Intern = require("../lib/Intern");
-const intern = new Intern('123', 'sean@sean.com', 'sean', 'UWA');
+const intern = new Intern('sean', '123', 'sean@sean.com', 'UWA');
 
 test('can we get the intern instance to instantiate', () => {
     expect(intern.name).toBe('sean');

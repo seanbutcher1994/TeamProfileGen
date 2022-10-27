@@ -1,7 +1,7 @@
 // Get access to Employee JS file
 const Employee = require('../lib/Employee');
 // create new employee with an Id, email and name property
-const employee = new Employee('123', 'sean@sean.com', 'sean')
+const employee = new Employee('sean', '123', 'sean@sean.com')
 
 // Runs tests to confirm that the functions return the correct values
 test('can we get the employee instance to instantiate', () => {

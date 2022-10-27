@@ -1,5 +1,5 @@
 const Engineer = require("../lib/Engineer");
-const engineer = new Engineer('123', 'sean@sean.com', 'sean', 'seanbutcher1994');
+const engineer = new Engineer('sean', '123', 'sean@sean.com', 'seanbutcher1994');
 
 test('can we get the engineer instance to instantiate', () => {
     expect(engineer.name).toBe('sean');

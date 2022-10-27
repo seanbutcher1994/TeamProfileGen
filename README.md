@@ -2,6 +2,7 @@
 
   ## Description
   This is a command line app which will allow the user to generate a profile of their team based on the input they provide.
+  [Walkthrough Video](https://drive.google.com/file/d/1yzDaAKp2oF-Fk3DMPIxgfkblTNseLQBk/view)
 
   # Table of Contents
   - [Installation Instructions](#installation-instructions)

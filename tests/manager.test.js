@@ -1,5 +1,5 @@
 const Manager = require("../lib/Manager");
-const manager = new Manager('123', 'sean@sean.com', 'sean', '321');
+const manager = new Manager('sean', '123', 'sean@sean.com', '321');
 
 test('can we get the manager instance to instantiate', () => {
     expect(manager.name).toBe('sean');
