@@ -6,7 +6,6 @@ const renderTeam = require('./utils/renderTeam');
 
 const inquirer = require("inquirer");
 const fs = require("fs");
-//const chalk = require("chalk");
 
 let employees = [];
 let company;

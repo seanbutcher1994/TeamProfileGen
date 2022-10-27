@@ -1,4 +1,4 @@
-//const chalk = require("chalk");
+
 
 
 
@@ -42,7 +42,7 @@ function commonQuestions(role="employee"){
                 if (re.test(String(userInput).toLowerCase())) {
                     return true
                 } else {
-                    return chalk.redBright('Please enter a valid email');
+                    return console.log('Please enter a valid email');
                 };
             } 
         }
